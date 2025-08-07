@@ -23,10 +23,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 ## Usages Packages
--- Next js
--- Typescript 
--- Next auth
--- Tailwindcss
+- Next js
+- Typescript 
+- Next auth
+- Tailwindcss
 
 ## Deploy on Vercel
 
