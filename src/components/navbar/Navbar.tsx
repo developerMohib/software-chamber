@@ -29,7 +29,7 @@ const Navbar = () => {
 
                     {/* CTA Button, Theme Toggle and Mobile Menu Toggle */}
                     <div className="flex items-center gap-4">
-                        <button className='font-outfit border border-[#646567] rounded-full px-3 py-1 flex gap-2 items-center cursor-pointer bg-linear-to-r from-[#28303F] to-[#c7c7c7] text-white'>Contact Us <span> <AiOutlineLogout className='bg-white text-black rounded-full text-3xl p-2' /> </span> </button> 
+                        <button className='font-outfit border border-[#646567] rounded-full px-3 py-1 flex gap-2 items-center cursor-pointer bg-linear-to-r from-[#28303F] to-[#7a7a7a] text-white'>Contact Us <span> <AiOutlineLogout className='bg-white text-black rounded-full text-3xl p-2' /> </span> </button>
 
                         <TbMenu3 className='bg-linear-to-r from-[#28303F] to-[#c7c7c7] text-white rounded-full text-4xl p-2' />
                     </div>
