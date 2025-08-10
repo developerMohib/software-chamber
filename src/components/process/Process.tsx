@@ -1,5 +1,4 @@
 import CTAButton from '@/shared/CTAButton/CTAButton';
-import Image from 'next/image';
 import React from 'react';
 import { AiOutlineLogout } from 'react-icons/ai';
 import { TiStarFullOutline } from 'react-icons/ti';
