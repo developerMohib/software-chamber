@@ -20,8 +20,8 @@ const Process = () => {
                     Our Software  <br />
                     Development Process
                 </h1>
-                <p className='font-outfit text-sm md:w-4/5 mx-auto'>Deliver personalized experiences to your customers with AI-powered recommendation engines and dynamic content generation.</p>
-                <div className='justify-center'>
+                <p className='font-outfit text-sm md:w-4/5 mx-auto text-[#808080]'>Deliver personalized experiences to your customers with AI-powered recommendation engines and dynamic content generation.</p>
+                <div className='flex justify-center my-8'>
                     <CTAButton label="Contact Us"
                     icon={<AiOutlineLogout className="bg-white text-black rounded-full text-3xl p-2" />}
                     />
