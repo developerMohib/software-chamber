@@ -1,17 +1,22 @@
+"use client"
+import CTAButton from "@/shared/CTAButton/CTAButton";
 import Image from "next/image";
 import { AiOutlineLogout } from "react-icons/ai";
 import { TiStarFullOutline } from "react-icons/ti";
 const Banner = () => {
+    const handlerContact = () => {
+        console.log("Contact to mohibullah")
+    }
     return (
         <main>
-            <div className="flex items-center justify-center">
-                <h1 className="font-inter inline-block bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.05),_rgba(44,206,187,0.15))] px-3 py-1 text-center rounded-full text-xs font-light">
-                    <TiStarFullOutline className="inline-block mr-2" />
+            <div className="flex items-center justify-center mt-20">
+                <h1 className="font-inter inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs font-light">
+                    <TiStarFullOutline className="inline-block mr-2 text-white" />
                     Smarter Idea, instant solutions
                 </h1>
             </div>
             <div className="flex items-center justify-center">
-                <h1 className="font-bricolageGrotesque text-6xl font-semibold text-center bg-gradient-to-t from-white to-[#00f6d9] bg-clip-text text-transparent">
+                <h1 className="font-bricolageGrotesque text-5xl font-semibold text-center bg-gradient-to-t from-white to-[#00f6d9] bg-clip-text text-transparent">
                     We are your Software <br />
                     Development{" "}
                     <span className="inline-flex items-center">
@@ -28,14 +33,16 @@ const Banner = () => {
                             width={40}
                             height={40}
                         />
-                    </span>{" "}
+                    </span> {" "}
                     Team <br />
                     in The Cloud
                 </h1>
             </div>
 
             <div className="flex items-center justify-center gap-4 mt-7">
-                <button className='font-outfit border border-[#646567] rounded-full px-3 py-1 flex gap-2 items-center cursor-pointer bg-linear-to-r from-[#28303F] to-[#7a7a7a] text-white'>Contact Us <span> <AiOutlineLogout className='bg-white text-black rounded-full text-3xl p-2' /> </span> </button>
+                <CTAButton label="Contact Us"
+                    icon={<AiOutlineLogout className="bg-white text-black rounded-full text-3xl p-2" />}
+                    onClick={handlerContact} />
             </div>
         </main>
     );

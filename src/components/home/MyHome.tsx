@@ -1,10 +1,12 @@
 import React from 'react';
 import Banner from '../banner/Banner';
+import Process from '../process/Process';
 
 const MyHome = () => {
     return (
         <div>
             <Banner />
+            <Process />
             <h1 className='font-rubik' >This component is for font-rubik</h1>
             <h1 className='font-dm-sans' >This component is for font-dm-sans</h1>
             <h1 className='font-outfit' >This component is for font-outfit</h1>
