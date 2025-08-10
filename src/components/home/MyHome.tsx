@@ -7,11 +7,11 @@ const MyHome = () => {
         <div>
             <Banner />
             <Process />
-            <h1 className='font-rubik' >This component is for font-rubik</h1>
-            <h1 className='font-dm-sans' >This component is for font-dm-sans</h1>
-            <h1 className='font-outfit' >This component is for font-outfit</h1>
-            <h1 className='font-inter' >This component is for font-inter</h1>
-            <h1 className='font-bricolage' >This component is for font-bricolage</h1>
+            <h1 className='font-rubik' >Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz for font-rubik</h1>
+            <h1 className='font-dm-sans' >Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz for font-dm-sans</h1>
+            <h1 className='font-outfit' >Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz for font-outfit</h1>
+            <h1 className='font-inter' >Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz for font-inter</h1>
+            <h1 className='font-bricolage' >Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz for font-bricolage</h1>
         </div>
     );
 };
