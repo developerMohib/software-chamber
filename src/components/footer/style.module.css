@@ -1,0 +1,6 @@
+.dashedSpaced {
+  background-image: linear-gradient(to right, #a5a5a55e 50%, rgba(167, 167, 167, 0) 0%);
+  background-position: top;
+  background-size: 20px 1px;
+  background-repeat: repeat-x;
+}

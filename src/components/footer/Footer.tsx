@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { HiArrowUpRight } from "react-icons/hi2";
+import styles from "./style.module.css"
 const socialLinks = [
     { name: "Instagram", url: "/#", icon: true },
     { name: "Facebook", url: "/#", icon: true },
@@ -28,7 +29,7 @@ const contactInfo = [
 
 const Footer = () => {
     return (
-        <footer className="mt-10 px-10">
+        <footer className="mt-10 p-10">
             <div className='my-14'>
                 <h1 className='uppercase font-bricolageGrotesque text-7xl text-white font-semibold' >Let&apos;s talk</h1>
             </div>
@@ -83,7 +84,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* Footer */}
-            <div className='flex items-center justify-between text-[#A6A6A6] text-sm border-t border-dashed py-5 font-outfit'>
+            <div className={`${styles.dashedSpaced} flex items-center justify-between text-[#A6A6A6] text-sm py-5 font-outfit mt-20`}>
                 <p>2024 Software Chamber All Right Reserved</p>
                 <p className='space-x-16 font-medium'>
                     <span>Privacy Policy</span>
