@@ -15,7 +15,7 @@ const Reviews = () => {
                 </h1>
             </div>
 
-{/* client says */}
+            {/* client says */}
             <div className="relative w-[95%] px-10 mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#2ccebb50]">
                 {/* Glowing top border */}
                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#2CCEBA] to-transparent"></div>
