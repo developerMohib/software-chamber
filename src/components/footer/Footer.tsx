@@ -29,7 +29,7 @@ const contactInfo = [
 
 const Footer = () => {
     return (
-        <footer className="mt-10 p-10">
+        <footer className="mt-10 p-10 bg-black">
             <div className='my-14'>
                 <h1 className='uppercase font-bricolageGrotesque text-7xl text-white font-semibold' >Let&apos;s talk</h1>
             </div>
