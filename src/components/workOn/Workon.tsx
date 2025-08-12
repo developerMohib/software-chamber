@@ -100,7 +100,7 @@ const Workon = () => {
                                         <Image src={item.value} alt="logo" width={500} height={500} />
                                     </div>
                                 ) : (
-                                    <span className="text-sm font-medium">{item.value}</span>
+                                    <span className="text-sm font-dmSans font-medium">{item.value}</span>
                                 )}
                             </div>
                         </div>
