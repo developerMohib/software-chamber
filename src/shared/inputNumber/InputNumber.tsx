@@ -18,7 +18,6 @@ const countries: Country[] = wc.map((country) => ({
     code: `+${country.idd.root?.replace('+', '')}${country.idd.suffixes?.[0] || ''}`,
     flag: country.flag,
 }));
-console.log('country ', countries)
 function PhoneDropdown({ selectedCountry, onSelect }: PhoneDropdownProps) {
     const [isOpen, setIsOpen] = useState(false);
 
