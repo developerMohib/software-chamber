@@ -3,7 +3,7 @@ import { TiStarFullOutline } from "react-icons/ti";
 
 const Reviews = () => {
     return (
-        <section className="p-10">
+        <section className="px-10 py-20">
             <div className="flex items-center justify-center md:mt-20">
                 <h1 className="font-inter inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs font-light">
                     <TiStarFullOutline className="inline-block mr-2 text-white" />
@@ -15,12 +15,13 @@ const Reviews = () => {
                 </h1>
             </div>
 
+{/* client says */}
             <div className="relative w-[95%] px-10 mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#2ccebb50]">
                 {/* Glowing top border */}
                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#2CCEBA] to-transparent"></div>
 
                 {/* Card content */}
-                <div className="relative z-10 p-10 text-white">
+                <div className="relative z-10 py-10 px-14 text-white">
                     <p className="w-[85%] text-start"> <q className="font-outfit font-medium text-2xl">Sed sit varius neque turpis enim ut metus consectetur. Tortor urna risus phasellus nec. In facilisis pulvinar sagittis odio nibh condimentum aliquet commodo.</q></p>
 
                     <div className="mt-8 grid grid-cols-2 items-center">
