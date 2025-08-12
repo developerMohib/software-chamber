@@ -3,16 +3,6 @@ import Image from 'next/image';
 import React, { useEffect } from 'react';
 import { TiStarFullOutline } from 'react-icons/ti';
 
-// const logos1 = [
-//     { id: 1, component: "/images/mono.png" },
-//     { id: 2, component: "/images/code-frame-1.png" },
-//     { id: 3, component: "/images/code-frame-2.png" },
-//     { id: 4, component: "/images/contact-image.png"},
-//     { id: 5, component: "/images/Footer-Meeting.png" },
-//     { id: 6, component: "/images/Logo-icon-wrapper.png" },
-//     { id: 7, component: "/images/Rectangle6.png" },
-// ];
-
 const logos1 = [
     { id: 1, type: "text", value: "Health Care" },
     { id: 2, type: "image", value: "/images/image.png" },
@@ -71,8 +61,8 @@ const Workon = () => {
     const Marquee = ({ logos, direction = 'forwards' }: { logos: typeof logos1; direction?: string }) => {
         const numItems = logos.length;
         const speed = '40s';
-        const itemWidth = '120px';
-        const itemGap = '25px';
+        const itemWidth = '80px';
+        const itemGap = '20px';
 
         return (
             <div
@@ -99,7 +89,7 @@ const Workon = () => {
                             className="flex-shrink-0 flex justify-center items-center text-white"
                             style={{
                                 width: 'var(--item-width)',
-                                aspectRatio: '1 / 1.2',
+                                aspectRatio: '1 / 1.3',
                                 marginRight: 'var(--item-gap)',
                                 animation: `marquee-move var(--speed) linear infinite ${direction}`,
                             } as React.CSSProperties}
@@ -122,7 +112,7 @@ const Workon = () => {
 
     return (
         <section className='pt-10 px-10 pb-16 bg-black'>
-            <div className="flex items-center justify-center my-10">
+            <div className="flex items-center justify-center mt-10">
                 <h1 className="font-inter inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs font-light text-white">
                     <TiStarFullOutline className="inline-block mr-2 text-white" />
                     Smarter Idea, instant solutions
