@@ -16,7 +16,7 @@ const Banner = () => {
                 </h1>
             </div>
             <div className="flex items-center justify-center">
-                <h1 className="font-bricolageGrotesque text-5xl font-semibold text-center bg-gradient-to-t from-white to-[#00f6d9] bg-clip-text text-transparent">
+                <h1 className="font-bricolageGrotesque text-5xl font-medium text-center bg-gradient-to-t from-white to-[#00f6d9] bg-clip-text text-transparent">
                     We are your Software <br />
                     Development{" "}
                     <span className="inline-flex items-center">

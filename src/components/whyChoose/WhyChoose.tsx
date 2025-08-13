@@ -81,16 +81,13 @@ const WhyChoose = () => {
     };
     return (
         <section className='p-10 bg-white'>
-
-
-
             <div className="w-3/5 mx-auto px-5 text-center space-y-10">
                 <h1 className="font-bricolageGrotesque text-5xl font-medium text-[#0C0C0C]" >Why Choose <br /> Softwarechamber</h1>
                 <h6 className="font-outfit text-sm font-light mx-auto text-center text-[#494949]">Deliver personalized experiences to your customers with AI-powered <br />recommendation engines and dynamic content generation.
                 </h6>
             </div>
             <div className='flex justify-center my-8'>
-                <button type="button" className="text-white bg-linear-to-r from-[#16AD71] to-[#2CCEBA] hover:from-[#2CCEBA] hover:to-[#16AD71] font-semibold rounded-full text-sm px-4 py-2.5 flex items-center w-36 justify-between"> Let&apos;s Discuss <span><GoArrowUpRight className="bg-white text-black rounded-full text-3xl p-2" /> </span> </button>
+                <button type="button" className="text-white bg-linear-to-r from-[#16AD71] to-[#2CCEBA] hover:from-[#2CCEBA] hover:to-[#16AD71] font-semibold rounded-full text-sm px-4 py-2.5 flex items-center gap-8 justify-between"> Let&apos;s Discuss <span><GoArrowUpRight className="bg-white text-black rounded-full text-3xl p-2" /> </span> </button>
             </div>
             <div className="relative py-8">
                 {/* Navigation Arrows Only */}
@@ -102,7 +99,7 @@ const WhyChoose = () => {
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-8 z-10 w-12 h-12 rounded-full bg-black shadow-md flex items-center justify-center text-white hover:text-black transition-all duration-300 hover:bg-gray-400 cursor-pointer"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-8 z-10 w-12 h-12 rounded-full bg-black shadow-md flex items-center justify-center text-white hover:text-black transition-all duration-300 hover:bg-gray-300 cursor-pointer"
                 >
                    <MdExpandLess className='rotate-90 text-2xl' />
                 </button>

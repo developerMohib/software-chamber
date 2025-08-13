@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Rubik, Inter, Bricolage_Grotesque, DM_Sans } from "next/font/google";
+import { Outfit, Rubik, Inter, DM_Sans, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
