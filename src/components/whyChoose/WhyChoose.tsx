@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { GoArrowUpRight } from 'react-icons/go';
 import { MdExpandLess } from "react-icons/md";
 export const cardsData = [
@@ -58,17 +58,19 @@ const WhyChoose = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    useEffect(() => {
-        updateCarousel();
-    }, [currentIndex, visibleCards]);
 
-    const updateCarousel = () => {
+    const updateCarousel = useCallback(() => {
         if (trackRef.current) {
             const cardWidth = trackRef.current.children[0]?.clientWidth || 0;
             const offset = -currentIndex * cardWidth;
             trackRef.current.style.transform = `translateX(${offset}px)`;
         }
-    };
+    }, [currentIndex]);
+
+
+    useEffect(() => {
+        updateCarousel();
+    }, [currentIndex, visibleCards,updateCarousel]);
 
     const nextSlide = () => {
         setCurrentIndex(prev => (prev + 1) % (cardsData.length - visibleCards + 1));
@@ -94,13 +96,13 @@ const WhyChoose = () => {
                 {/* Navigation Arrows Only */}
                 <button
                     onClick={prevSlide}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 md:-ml-8 z-10 w-12 h-12 rounded-full bg-black shadow-md flex items-center justify-center text-white hover:text-black transition-all duration-300 hover:bg-whtie"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 md:-ml-8 z-10 w-12 h-12 rounded-full bg-black shadow-md flex items-center justify-center text-white hover:text-black transition-all duration-300 hover:bg-gray-300 cursor-pointer"
                 >
                    <MdExpandLess className='-rotate-90 text-2xl' />
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-8 z-10 w-12 h-12 rounded-full bg-black shadow-md flex items-center justify-center text-white hover:text-black transition-all duration-300 hover:bg-white"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-8 z-10 w-12 h-12 rounded-full bg-black shadow-md flex items-center justify-center text-white hover:text-black transition-all duration-300 hover:bg-gray-400 cursor-pointer"
                 >
                    <MdExpandLess className='rotate-90 text-2xl' />
                 </button>
