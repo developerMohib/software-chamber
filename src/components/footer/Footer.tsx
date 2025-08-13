@@ -31,7 +31,7 @@ const Footer = () => {
     return (
         <footer className="mt-10 p-10 bg-black">
             <div className='my-14'>
-                <h1 className='uppercase font-bricolageGrotesque text-7xl text-white font-semibold' >Let&apos;s talk</h1>
+                <h1 className='uppercase font-bricolage text-7xl text-white font-semibold' >Let&apos;s talk</h1>
             </div>
             <div className="grid grid-cols-3">
                 <div className='grid-cols-1'>
@@ -39,7 +39,7 @@ const Footer = () => {
                         <p className="text-[#A6A6A6] text-[16px] mb-5 tracking-wide">A new era of energy, elegance, and elite competition begins here. Where passion meets performance on the court like never before.</p>
                         <div className="mt-10">
 
-                            <h1 className='font-bricolageGrotesque text-xl text-white px-2' >Social media</h1>
+                            <h1 className='font-bricolage text-xl text-white px-2' >Social media</h1>
                         </div>
                         <div className="grid grid-cols-3 gap-5 px-1 mt-3">
                             {Array.from({ length: 3 }).map((_, colIndex) => (

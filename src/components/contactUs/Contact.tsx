@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <section className="bg-white py-16 px-10">
             <div className="w-3/5 mx-auto px-5 text-center space-y-10">
-                <h1 className="font-bricolageGrotesque text-5xl font-medium text-[#0C0C0C]" >Let&apos;s talk about your next project. <span className="text-[#A5A5A5] "> We&apos;re here to help.</span></h1>
+                <h1 className="font-bricolage text-5xl font-medium text-[#0C0C0C]" >Let&apos;s talk about your next project. <span className="text-[#A5A5A5] "> We&apos;re here to help.</span></h1>
                 <h6 className="font-outfit w-1/2 text-sm font-light mx-auto text-center text-[#494949]">Deliver personalized experiences to your customers with AI-powered recommendation engines and dynamic content generation.</h6>
             </div>
             <div className="grid grid-cols-12 gap-5 mt-10">

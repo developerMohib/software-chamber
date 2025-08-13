@@ -81,9 +81,11 @@ const WhyChoose = () => {
     };
     return (
         <section className='p-10 bg-white'>
-            <div className="w-3/5 mx-auto px-5 text-center space-y-10">
-                <h1 className="font-bricolageGrotesque text-5xl font-medium text-[#0C0C0C]" >Why Choose <br /> Softwarechamber</h1>
-                <h6 className="font-outfit text-sm font-light mx-auto text-center text-[#494949]">Deliver personalized experiences to your customers with AI-powered <br />recommendation engines and dynamic content generation.
+            <div className="md:w-3/5 mx-auto md:px-5 text-center md:space-y-10">
+                <h1 className="font-bricolage md:text-5xl text-3xl font-medium text-[#0C0C0C]" >Why Choose <br /> Softwarechamber</h1>
+                <h6 className="font-outfit text-sm font-light mx-auto text-center md:mt-0 mt-2 text-[#494949]">Deliver personalized experiences to your customers with AI-powered
+                    <span className="hidden md:inline"><br /></span>
+                    recommendation engines and dynamic content generation.
                 </h6>
             </div>
             <div className='flex justify-center my-8'>
@@ -113,10 +115,10 @@ const WhyChoose = () => {
                         {cardsData?.map((card, index) => (
                             <div
                                 key={index}
-                                className="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2 py-10"
+                                className="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2 md:py-5"
                             >
-                                <div className={`bg-gray-100 rounded-2xl p-6 h-full border border-gray-200 shadow-sm ${(index) % 2 ===0 ? " " : "mt-10"} `}>
-                                    <h2 className="font-bold text-xl mb-2 flex justify-between items-center font-bricolageGrotesque text-[#0C0C0C]">
+                                <div className={`bg-gray-100 rounded-2xl p-6 h-full border border-gray-200 shadow-sm ${(index) % 2 ===0 ? " " : "md:mt-10"} `}>
+                                    <h2 className="font-bold text-xl mb-2 flex justify-between items-center font-bricolage text-[#0C0C0C]">
                                         {card.title}
                                         <span className="bg-teal-400 text-white p-2 rounded-full font-outfit">
                                             <Image className='h-4 w-auto' src={card.icon} alt={card.title} width={500} height={500} />

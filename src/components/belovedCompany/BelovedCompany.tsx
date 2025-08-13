@@ -4,9 +4,9 @@ import React from 'react';
 const BelovedCompany = () => {
     return (
         <section className='p-10 bg-black'>
-            <div className='grid grid-cols-5 gap-6'>
+            <div className='md:grid grid-cols-5 gap-6'>
                 <div className='col-span-3'>
-                    <h1 className='font-medium text-white text-6xl'>Our Stack Powers of <br /> the <span className='text-[#A5A5A5]'>World&apos;s</span> Most <br /> <span className='text-[#A5A5A5]'>Beloved Companies</span></h1>
+                    <h1 className='font-medium text-white md:text-6xl text-3xl md:mb-0 mb-7'>Our Stack Powers of <br /> the <span className='text-[#A5A5A5]'>World&apos;s</span> Most <br /> <span className='text-[#A5A5A5]'>Beloved Companies</span></h1>
                 </div>
                 <div className='col-span-2 '>
                     {/* First line button */}

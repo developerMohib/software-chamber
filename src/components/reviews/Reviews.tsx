@@ -11,7 +11,7 @@ const Reviews = () => {
                 </h1>
             </div>
             <div className="my-10">
-                <h1 className="font-bricolageGrotesque text-5xl font-medium text-[#E9E9E9] w-3/4 mx-auto text-center">Don&apos;t just take our word for it. Hear what <span className="text-gray-500">our clients say</span>
+                <h1 className="font-bricolage text-5xl font-medium text-[#E9E9E9] w-3/4 mx-auto text-center">Don&apos;t just take our word for it. Hear what <span className="text-gray-500">our clients say</span>
                 </h1>
             </div>
 
@@ -36,7 +36,7 @@ const Reviews = () => {
                             />
 
                             <div>
-                                <p className="font-bricolageGrotesque font-medium">Alex Larkins</p>
+                                <p className="font-bricolage font-medium">Alex Larkins</p>
                                 <p className="font-outfit text-xs font-medium">
                                     Art director at Airbnb
                                 </p>

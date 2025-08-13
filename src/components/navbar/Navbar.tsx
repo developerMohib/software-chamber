@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react';
-import ThemeController from "@/shared/themeController/ThemeController";
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineLogout } from "react-icons/ai";
@@ -26,14 +25,14 @@ const Navbar = () => {
     }
     console.log("handleDrawer clicked",isOpen)
     return (
-        <header className="backdrop-blur-sm sticky top-0 z-50 w-full">
+        <header className="backdrop-blur-sm sticky top-0 z-50 w-full bg-black">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo Section */}
                     <Link href={"/"}>
                         <div className="flex-shrink-0 flex items-center gap-x-1">
                             <Image src={"/images/Logo-s.png"} className='rounded-md' alt='Software Chamber' width={30} height={10} />
-                            <p className='leading-[0.8em] font-outfit'> <span className='block my-0 font-semibold tracking-[0.05em]'>Software</span> <span className='tracking-[.25em] font-light text-xs' >Chamber</span> </p>
+                            <p className='leading-[0.8em] font-outfit text-white'> <span className='block my-0 font-semibold tracking-[0.05em]'>Software</span> <span className='tracking-[.25em] font-light text-xs' >Chamber</span> </p>
                         </div>
                     </Link>
 
@@ -46,7 +45,6 @@ const Navbar = () => {
                         <button onClick={handleDrawer}>
                             <TbMenu3 className='bg-linear-to-r from-[#28303F] to-[#c7c7c7] text-white rounded-full text-4xl p-2' />
                         </button>
-                        <ThemeController />
                     </div>
                 </div>
             </div>

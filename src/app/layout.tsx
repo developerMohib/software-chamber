@@ -33,10 +33,9 @@ const dmSans = DM_Sans({
 });
 
 // Add Bricolage Grotesque
-const bricolageGrotesque = Bricolage_Grotesque({
-  variable: "--font-bricolage-grotesque",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
-  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -52,15 +51,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <body
-          className={`${outfit.variable} ${rubik.variable} ${inter.variable} ${rubik.variable} ${dmSans.variable} ${bricolageGrotesque.variable} antialiased`}
-          >
-            <Navbar />
-          <div>
-            {children}
-          </div>
-          <Footer />
-        </body>
+      <body
+        className={`${outfit.variable} ${rubik.variable} ${inter.variable} ${rubik.variable} ${dmSans.variable} ${bricolage.variable} antialiased`}
+      >
+        <Navbar />
+        <div>
+          {children}
+        </div>
+        <Footer />
+      </body>
     </html>
   );
 }
