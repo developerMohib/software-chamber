@@ -18,9 +18,9 @@ const Orbit = () => {
                 <div className="absolute w-full"></div>
 
                 {/* Step Items */}
-                <div className="flex justify-between w-full max-w-3xl absolute top-0">
+                <div className="flex justify-between w-full absolute top-0">
                     {steps.map((step, idx) => (
-                        <div key={idx} className="flex flex-col items-center">
+                        <div key={idx} className="flex flex-col items-center ">
                             <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white text-sm shadow-md">
                                 {step.num}
                             </div>
@@ -33,7 +33,7 @@ const Orbit = () => {
             <div className="relative">
 
                <Image
-                        className="w-full h-[500px] mx-auto"
+                        className="w-full md:h-[500px] mx-auto"
                         src={"/images/earth.png"}
                         alt="solar"
                         width={500}
