@@ -1,25 +1,25 @@
-
 ## Getting Started My Project - Software Chamber
+
 - [Live Link](https://my-software-chamber.vercel.app)
 
-Git clone from my github 
+Git clone from my github
+
 ```
 git clone https://github.com/developerMohib/software-chamber.git
 ```
 
 software-chamber/
-├── public/              # Static assets (images, icons, etc.)
-│   ├── images/          
-│   ├── icons/
+├── public/ # Static assets (images, icons, etc.)
+│ ├── images/  
+│ ├── icons/
 ├── src/
-│   ├── app/             # Next.js App Router pages
-│   ├── components/      # Reusable UI components
-│   ├── shared/          # reusable components
+│ ├── app/ # Next.js App Router pages
+│ ├── components/ # Reusable UI components
+│ ├── shared/ # reusable components
 ├── package.json
 ├── tailwind.config.js
 ├── tsconfig.json
 └── README.md
-
 
 ## 🚀 Features
 
@@ -40,16 +40,25 @@ software-chamber/
 - Clean code architecture with reusable component
 
 ## Challenging Part
-- 
 
+- Banner bottom part for making gradient
 
+- In process section i can't make it so nice way, here need to make solar circle and need to pin the process
 
+- Beloved Company section border for gradient and border bottom none, left and right half
 
-install all dependency 
+- Reviews section border top nice finishing
+
+- Footer border dashed is the another challenging part
+
+install all dependency
+
 ```
 npm i
 ```
+
 Ready to run
+
 ```bash
 npm run dev
 # or
@@ -62,21 +71,21 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
 ## 🛠️ Tech Stack Use
+
 - Next.js 14 (App Router)
 - React 18
-- Typescript 
+- Typescript
 - Next auth
 - TailwindCSS for styling
 
 ## Deploy on Vercel
+
 - I use to deploy on vercel with connect github
 
 The easiest way to deploy Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
 
-
 # Image
-![SOFTWARE CHAMBER FOR DESKTOP](./public/images/desktop-software-chamber.png)
-![SOFTWARE CHAMBER FOR DESKTOP](./public/images/desresponsive-software-chamber.jpeg)
 
+![SOFTWARE CHAMBER FOR DESKTOP](./public/images/desktop-software-chamber.png)
+![SOFTWARE CHAMBER FOR DESKTOP](./public/images/responsive-software-chamber.png)
