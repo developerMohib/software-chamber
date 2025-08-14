@@ -112,12 +112,12 @@ const Workon = () => {
 
     return (
         <section className='md:pt-10 pt-4 px-10 pb-16 bg-black'>
-            <div className="flex items-center justify-center mt-10">
-                <h1 className="font-inter inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs font-light text-white">
-                    <TiStarFullOutline className="inline-block mr-2 text-white" />
+            <header className="flex justify-center container mt-8">
+                <p className="font-inter font-light text-white inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs">
+                    <TiStarFullOutline className="inline-block mr-2 text-white" aria-hidden />
                     Smarter Idea, instant solutions
-                </h1>
-            </div>
+                </p>
+            </header>
             <div className="items-center overflow-hidden">
                 <div className="w-full flex flex-col gap-y-0.5">
                     <Marquee logos={logos1} />

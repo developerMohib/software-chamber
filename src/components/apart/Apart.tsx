@@ -9,12 +9,14 @@ const Apart = () => {
     return (
         <section className='md:p-10 px-3 pb-6 bg-black'>
             <div className={`relative md:py-1 py-3 ${styles.gradientBorder}`}>
-                <div className="flex items-center justify-center md:mt-20 mt-8">
-                    <h1 className="font-inter inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs font-light text-white">
-                        <TiStarFullOutline className="inline-block mr-2 text-white" />
+
+
+                <header className="flex justify-center container md:mt-20 mt-8">
+                    <p className="font-inter font-light text-white inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs">
+                        <TiStarFullOutline className="inline-block mr-2 text-white" aria-hidden />
                         Smarter Idea, instant solutions
-                    </h1>
-                </div>
+                    </p>
+                </header>
                 <div>
                     <Image src={"/images/Logo-icon-wrapper.png"} alt={'Logo'} width={500} height={500} className='h-12 w-auto mx-auto text-center mt-8 mb-5' />
                     <h1 className="font-bricolage md:text-5xl text-3xl font-medium text-[#E9E9E9] text-center">Uncover the Design and Development <span className="hidden md:inline"><br /></span> Projects <span className='text-gray-400' >That Set Us Apart</span> </h1>

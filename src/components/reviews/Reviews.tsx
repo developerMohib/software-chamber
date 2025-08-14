@@ -3,13 +3,13 @@ import { TiStarFullOutline } from "react-icons/ti";
 
 const Reviews = () => {
     return (
-        <section className="md:px-10 px-5 py-20 bg-black">
-            <div className="flex items-center justify-center md:mt-20">
-                <h1 className="font-inter inline-block text-white bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs font-light">
-                    <TiStarFullOutline className="inline-block mr-2 text-white" />
+        <section className="md:px-10 px-5 pt-5 md:pb-20 pb-10 bg-black">
+            <header className="flex justify-center container md:mt-20 mt-8">
+                <p className="font-inter font-light text-white inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs">
+                    <TiStarFullOutline className="inline-block mr-2 text-white" aria-hidden />
                     Smarter Idea, instant solutions
-                </h1>
-            </div>
+                </p>
+            </header>
             <div className="my-10">
                 <h1 className="font-bricolage md:text-5xl text-3xl font-medium text-[#E9E9E9] text-center">Don&apos;t just take our word for it. Hear <span className="hidden md:inline"><br /></span>what <span className="text-gray-500">our clients say</span>
                 </h1>
