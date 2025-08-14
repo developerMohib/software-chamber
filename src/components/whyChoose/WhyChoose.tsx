@@ -125,7 +125,7 @@ const WhyChoose = () => {
                                         </span>
                                     </h2>
                                     <hr className="border-t border-gray-300 my-3" />
-                                    <p className="text-gray-600 text-[16px] font-medium">{card.description}</p>
+                                    <p className="text-gray-600 text-base font-medium">{card.description}</p>
                                 </div>
                             </div>
                         ))}

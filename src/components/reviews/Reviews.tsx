@@ -11,22 +11,22 @@ const Reviews = () => {
                 </h1>
             </div>
             <div className="my-10">
-                <h1 className="font-bricolage text-5xl font-medium text-[#E9E9E9] w-3/4 mx-auto text-center">Don&apos;t just take our word for it. Hear what <span className="text-gray-500">our clients say</span>
+                <h1 className="font-bricolage md:text-5xl text-3xl font-medium text-[#E9E9E9] text-center">Don&apos;t just take our word for it. Hear <span className="hidden md:inline"><br /></span>what <span className="text-gray-500">our clients say</span>
                 </h1>
             </div>
 
             {/* client says */}
-            <div className="relative w-[95%] px-10 mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#2ccebb50]">
+            <div className="relative md:w-[95%] md:px-10 mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#2ccebb50]">
                 {/* Glowing top border */}
                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#2CCEBA] to-transparent"></div>
 
                 {/* Card content */}
-                <div className="relative z-10 py-10 px-14 text-white">
-                    <p className="w-[85%] text-start"> <q className="font-outfit font-medium text-2xl">Sed sit varius neque turpis enim ut metus consectetur. Tortor urna risus phasellus nec. In facilisis pulvinar sagittis odio nibh condimentum aliquet commodo.</q></p>
+                <div className="relative z-10 md:py-10 py-5 md:px-14 px-4 text-white">
+                    <p className="md:w-[85%] text-start"> <q className="font-outfit font-medium md:text-2xl text-base">Sed sit varius neque turpis enim ut metus consectetur. Tortor urna risus phasellus nec. In facilisis pulvinar sagittis odio nibh condimentum aliquet commodo.</q></p>
 
                     <div className="mt-8 grid grid-cols-2 items-center">
                         {/* Left */}
-                        <div className="flex gap-4 items-center">
+                        <div className="flex md:gap-4 gap-2 items-center">
                             <Image
                                 className="w-14 h-14 rounded-full"
                                 src="/images/reivew-base.png"
@@ -36,8 +36,8 @@ const Reviews = () => {
                             />
 
                             <div>
-                                <p className="font-bricolage font-medium">Alex Larkins</p>
-                                <p className="font-outfit text-xs font-medium">
+                                <p className="font-bricolage md:text-base text-xs font-medium">Alex Larkins</p>
+                                <p className="font-outfit md:text-xs text-[10px] md:font-medium">
                                     Art director at Airbnb
                                 </p>
                             </div>
@@ -45,7 +45,7 @@ const Reviews = () => {
 
                         {/* Right */}
                         <div className="flex justify-end">
-                            <Image className="w-32 h-auto"
+                            <Image className="md:w-32 w-24 h-auto"
                                 src="/images/mono.png"
                                 alt="mono"
                                 width={500} height={300}

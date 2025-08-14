@@ -70,7 +70,7 @@ const Banner = () => {
                             <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus est cupiditate sint libero officia dignissimos possimus obcaecati impedit distinctio, voluptates ipsa consectetur officiis dolore in atque necessitatibus ad amet excepturi.</p>
                         </div>
                         <div className="grid-cols-1 bg-white">
-                            <h1 className="font-rubik font-medium md:text-2xl text-[16px]">Software Service Solutions</h1>
+                            <h1 className="font-rubik font-medium md:text-2xl text-base">Software Service Solutions</h1>
                         </div>
                     </div>
                 </div>

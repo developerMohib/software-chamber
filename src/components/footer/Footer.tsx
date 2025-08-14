@@ -30,18 +30,18 @@ const contactInfo = [
 const Footer = () => {
     return (
         <footer className="mt-10 p-10 bg-black">
-            <div className='my-14'>
-                <h1 className='uppercase font-bricolage text-7xl text-white font-semibold' >Let&apos;s talk</h1>
+            <div className='md:my-14 my-5'>
+                <h1 className='uppercase font-bricolage md:text-7xl text-3xl text-white font-semibold' >Let&apos;s talk</h1>
             </div>
-            <div className="grid grid-cols-3">
+            <div className="md:grid grid-cols-3">
                 <div className='grid-cols-1'>
                     <div className='w-4/5 text-start'>
-                        <p className="text-[#A6A6A6] text-[16px] mb-5 tracking-wide">A new era of energy, elegance, and elite competition begins here. Where passion meets performance on the court like never before.</p>
+                        <p className="text-[#A6A6A6] text-base mb-5 tracking-wide">A new era of energy, elegance, and elite competition begins here. Where passion meets performance on the court like never before.</p>
                         <div className="mt-10">
 
-                            <h1 className='font-bricolage text-xl text-white px-2' >Social media</h1>
+                            <h1 className='font-bricolage text-xl text-white md:px-2' >Social media</h1>
                         </div>
-                        <div className="grid grid-cols-3 gap-5 px-1 mt-3">
+                        <div className="grid grid-cols-3 gap-5 md:px-1 mt-3">
                             {Array.from({ length: 3 }).map((_, colIndex) => (
                                 <div key={colIndex} className="space-y-1">
                                     {socialLinks
@@ -65,28 +65,28 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='grid-cols-1'>
-                    <div className='grid grid-cols-3'>
+                    <div className='md:grid grid-cols-3'>
                         <div className='grid-cols-1'></div>
                         <div className='col-span-2'>
                             {contactInfo?.map((info, index) => (
-                                <div key={index} className="flex mb-6">
+                                <div key={index} className="flex md:mb-6">
                                     <div className="w-3/5 text-start">
-                                        <h1 className='mb-2'>{info.title}</h1>
-                                        <p className="text-[#A6A6A6] text-[16px] font-outfit">{info.detail}</p>
+                                        <h1 className='md:mb-2'>{info.title}</h1>
+                                        <p className="text-[#A6A6A6] text-base font-outfit">{info.detail}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </div>
-                <div className='grid-cols-1 flex justify-end'>
-                    <Image className='h-64 w-auto' src={"/images/Footer-Meeting.png"} alt='Footer-Meeting.png' width={500} height={500} />
+                <div className='grid-cols-1 flex md:justify-end'>
+                    <Image className='h-64 md:w-auto w-full' src={"/images/Footer-Meeting.png"} alt='Footer-Meeting.png' width={500} height={500} />
                 </div>
             </div>
             {/* Footer */}
-            <div className={`${styles.dashedSpaced} flex items-center justify-between text-[#A6A6A6] text-sm py-5 font-outfit mt-20`}>
-                <p>2024 Software Chamber All Right Reserved</p>
-                <p className='space-x-16 font-medium'>
+            <div className={`${styles.dashedSpaced} md:flex items-center md:justify-between text-center text-[#A6A6A6] text-sm py-5 font-outfit mt-20`}>
+                <p className='md:mb-0 mb-2'>2024 Software Chamber All Right Reserved</p>
+                <p className='space-x-16 font-medium '>
                     <span>Privacy Policy</span>
                     <span>Terms & Conditions</span>
                 </p>

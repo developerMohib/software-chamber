@@ -10,3 +10,19 @@
     rgba(44, 206, 186, 0) 100% 
   );
 }
+
+/* Tablet: make border thinner */
+@media (max-width: 768px) {
+  .gradientBorder {
+    border-left-width: 0.5px;
+    border-right-width: 0.5px;
+  }
+}
+
+/* Mobile: remove border or adjust gradient */
+@media (max-width: 480px) {
+  .gradientBorder {
+    border-left: 1px;
+    border-right: 1px;
+  }
+}
