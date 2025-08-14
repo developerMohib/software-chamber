@@ -1,18 +1,64 @@
-
 ## Getting Started My Project - Software Chamber
+
 - [Live Link](https://my-software-chamber.vercel.app)
 
+Git clone from my github
 
-Git clone from my github 
 ```
 git clone https://github.com/developerMohib/software-chamber.git
 ```
 
-install all dependency 
+software-chamber/
+├── public/ # Static assets (images, icons, etc.)
+│ ├── images/  
+│ ├── icons/
+├── src/
+│ ├── app/ # Next.js App Router pages
+│ ├── components/ # Reusable UI components
+│ ├── shared/ # reusable components
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
+
+## 🚀 Features
+
+- Modern landing page design with smooth UI/UX
+
+- Responsive across all devices
+
+- Service showcase but not interactive cards
+
+- Development lifecycle section (Code → Build → Test → Release → Deploy → Monitor → Build)
+
+- Client testimonials & project showcase
+
+- FAQ section with expand/collapse
+
+- Contact form with validation
+
+- Clean code architecture with reusable component
+
+## Challenging Part
+
+- Banner bottom part for making gradient
+
+- In process section i can't make it so nice way, here need to make solar circle and need to pin the process
+
+- Beloved Company section border for gradient and border bottom none, left and right half
+
+- Reviews section border top nice finishing
+
+- Footer border dashed is the another challenging part
+
+install all dependency
+
 ```
 npm i
 ```
+
 Ready to run
+
 ```bash
 npm run dev
 # or
@@ -24,14 +70,22 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-## Usages Packages
-- Next js
-- Typescript 
+
+## 🛠️ Tech Stack Use
+
+- Next.js 14 (App Router)
+- React 18
+- Typescript
 - Next auth
-- Tailwindcss
+- TailwindCSS for styling
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- I use to deploy on vercel with connect github
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The easiest way to deploy Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+
+# Image
+
+![SOFTWARE CHAMBER FOR DESKTOP](./public/images/desktop-software-chamber.png)
+![SOFTWARE CHAMBER FOR DESKTOP](./public/images/responsive-software-chamber.png)
