@@ -2,9 +2,6 @@
 ## Getting Started My Project - Software Chamber
 - [Live Link](https://my-software-chamber.vercel.app)
 
-# Image
-![SOFTWARE CHAMBER FOR DESKTOP](./public/images/desktop-software-chamber.png)
-
 Git clone from my github 
 ```
 git clone https://github.com/developerMohib/software-chamber.git
@@ -77,3 +74,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - I use to deploy on vercel with connect github
 
 The easiest way to deploy Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+
+
+# Image
+![SOFTWARE CHAMBER FOR DESKTOP](./public/images/desktop-software-chamber.png)
+![SOFTWARE CHAMBER FOR DESKTOP](./public/images/desresponsive-software-chamber.jpeg)
+
