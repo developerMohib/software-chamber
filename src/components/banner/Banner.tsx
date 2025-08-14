@@ -10,26 +10,26 @@ const Banner = () => {
         console.log("Contact to mohibullah")
     }
     return (
-        <main className="bg-[url('/images/bgbanner.png')] bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center bg-black py-16">
+        <main className="bg-[url('/images/bgbanner.png')] bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center bg-black py-16 overflow-hidden w-full mx-auto">
 
             {/* Right side blur part start */}
-            <div className="absolute -left-10 top-16 w-[300px] h-8 bg-gradient-to-br from-[#21f7da] to-transparent rounded-full rotate-[25deg] overflow-hidden blur-[35px] z-50"></div>
-            <div className="absolute -left-10 top-50 w-[200px] h-8 bg-gradient-to-tr from-[#21f7da] to-transparent rounded-full blur-[35px] overflow-hidden rotate-[35deg]"></div>
+            <div className="absolute -left-10 md:top-26 top-12 md:w-80 w-40 h-8 bg-gradient-to-br from-[#21f7da] to-transparent rounded-full rotate-[25deg] overflow-hidden blur-[35px] z-50 "> </div>
+            <div className="absolute -left-10 md:top-56 top-44 md:w-80 w-40 h-8 bg-gradient-to-tr from-[#21f7da] to-transparent rounded-full blur-[35px] overflow-hidden rotate-[35deg]"></div>
             {/* Right side blur part end and left side start */}
-            <div className="absolute -right-10 top-16 w-[300px] h-8 bg-gradient-to-bl from-[#21f7da] to-transparent rounded-full blur-[35px] -rotate-[25deg] overflow-hidden z-50"></div>
-            <div className="absolute -right-10 top-50 w-[200px] h-8 bg-gradient-to-bl from-[#21f7da] to-transparent rounded-full blur-[35px] overflow-hidden -rotate-[35deg]"></div>
+            <div className="absolute -right-10 md:top-16 top-12 md:w-80 w-40 h-8 bg-gradient-to-bl from-[#21f7da] to-transparent rounded-full blur-[35px] -rotate-[25deg] overflow-hidden z-50"></div>
+            <div className="absolute -right-10 md:top-50 top-40 md:w-48 w-40 h-8 bg-gradient-to-bl from-[#21f7da] to-transparent rounded-full blur-[35px] overflow-hidden -rotate-[35deg]"></div>
             {/* Left side blur part end */}
 
 
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center container">
                 <h1 className="font-inter font-light text-white inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs">
                     <TiStarFullOutline className="inline-block mr-2 text-white" />
                     Smarter Idea, instant solutions
                 </h1>
             </div>
-            <div className="flex items-center justify-center md:mt-10 mt-6">
+            <div className="flex items-center justify-center md:mt-10 mt-6 container">
                 <h1 className="font-bricolage md:text-7xl text-3xl text-center bg-gradient-to-t from-white to-[#00f6d9] bg-clip-text text-transparent font-medium">
-                    We are your Software <br />
+                    We are your Software <span className="hidden md:inline"><br /></span>
                     Development{" "}
                     <span className="inline-flex items-center">
                         <Image
@@ -52,12 +52,12 @@ const Banner = () => {
                 </h1>
             </div>
 
-            <div className="flex items-center justify-center gap-4 md:mt-7 md:mb-10 my-4">
+            <div className="flex items-center justify-center gap-4 md:mt-7 md:mb-10 my-4 container">
                 <CTAButton label="Contact Us"
                     icon={<AiOutlineLogout className="bg-white text-black rounded-full text-3xl p-2" />}
                     onClick={handlerContact} />
             </div>
-            <div className="md:grid grid-cols-4 px-10">
+            <div className="md:grid grid-cols-4 px-10 container">
                 <div className="grid-cols-1 py-2">
                     <div className="flex flex-col justify-between h-full items-center md:gap-0 gap-3 sm:w-full">
                         <ItemButton label="Web Development" className=" " icon={<HiMiniDocumentCheck className="text-white text-3xl" />} />

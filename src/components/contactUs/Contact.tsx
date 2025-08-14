@@ -9,9 +9,9 @@ const Contact = () => {
                 <h1 className="font-bricolage md:text-5xl text-3xl font-medium text-[#0C0C0C]" >Let&apos;s talk about your next <span className="hidden md:inline"><br /></span> project. <span className="text-[#A5A5A5] "> We&apos;re here to help.</span></h1>
                 <h6 className="font-outfit text-sm font-light text-center text-[#494949]">Deliver personalized experiences to your customers with AI-powered recommendation <span className="hidden md:inline"><br /></span> engines and dynamic content generation.</h6>
             </div>
-            <div className="md:grid grid-cols-12 gap-5 mt-10 md:px-0 px-2">
+            <div className="md:grid grid-cols-12 gap-5 mt-10 md:px-0 px-5">
                 <div className="col-span-5">
-                    <Image className="h-auto w-full" src={"/images/contact-image.png"} alt="Contact Image" width={500} height={500} />
+                    <Image className="md:h-auto md:w-full h-56 " src={"/images/contact-image.png"} alt="Contact Image" width={500} height={500} />
                 </div>
                 <div className="col-span-7">
 

@@ -1,7 +1,5 @@
 .gradientBorder {
   /* Left & Right borders as gradient */
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
   
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -11,18 +9,45 @@
   );
 }
 
+.gradientBorder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px; /* Border thickness */
+  border-radius: 2rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(44, 206, 186, 1) 0%,
+    rgba(44, 206, 186, 0) 100%
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
 /* Tablet: make border thinner */
+/* Tablet adjustments */
 @media (max-width: 768px) {
-  .gradientBorder {
-    border-left-width: 0.5px;
-    border-right-width: 0.5px;
+  .gradientBorder::before {
+    padding: 1px; /* Thinner border */
+    background: linear-gradient(
+      to bottom,
+      rgba(44, 206, 186, 0.8) 0%, /* Slightly transparent */
+      rgba(44, 206, 186, 0) 80%   /* Faster fade */
+    );
   }
 }
 
-/* Mobile: remove border or adjust gradient */
+/* Mobile adjustments */
 @media (max-width: 480px) {
-  .gradientBorder {
-    border-left: 1px;
-    border-right: 1px;
+  .gradientBorder::before {
+    padding: 1px;
+    background: linear-gradient(
+      to bottom,
+      rgba(44, 206, 186, 0.6) 0%,
+      rgba(44, 206, 186, 0) 60%
+    );
   }
 }

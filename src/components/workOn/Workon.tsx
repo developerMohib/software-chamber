@@ -66,7 +66,7 @@ const Workon = () => {
 
         return (
             <div
-                className="max-w-full overflow-hidden"
+                className="overflow-hidden"
                 style={{
                     '--speed': speed,
                     '--numItems': numItems,

@@ -37,7 +37,7 @@ const experiences = [
 
 const Aboutus = () => {
     return (
-        <section className="bg-white p-10">
+        <section className="bg-white md:p-10 p-3 md:mt-10 mt-5">
             <div>
                 <h1 className="text-center text-[#0C0C0C] font-semibold font-bricolage md:text-5xl text-3xl md:w-4/5 mx-auto"><span className='inline-block align-middle font-bold mr-1.5'>
                     <svg color='#2CCEBA' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-11">
