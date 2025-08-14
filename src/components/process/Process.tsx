@@ -7,7 +7,7 @@ import Orbit from './orbit/Orbit';
 const Process = () => {
 
     return (
-        <section className="bg-black md:p-10 pt-10">            
+        <section className="bg-black md:px-10 pt-10">            
             <header className="flex justify-center container md:mt-12">
                 <p className="font-inter font-light text-white inline-block bg-radial from-[#00000045] to-[#2ccebb6f] to-90% border border-[#61dfd0] px-4 py-2 text-center rounded-full text-xs">
                     <TiStarFullOutline className="inline-block mr-2 text-white" aria-hidden />

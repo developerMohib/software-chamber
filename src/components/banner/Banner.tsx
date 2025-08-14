@@ -11,7 +11,7 @@ const Banner = () => {
   }
   return (
 
-    <section className="bg-[url('/images/bgbanner.png')] bg-center bg-no-repeat bg-cover  bg-black py-16 overflow-hidden w-full mx-auto" aria-label="Hero Banner">
+    <section className="bg-[url('/images/bgbanner.png')] bg-center bg-no-repeat bg-cover bg-black py-16 overflow-hidden w-full mx-auto" aria-label="Hero Banner">
 
       {/* Right side blur part start */}
 
@@ -66,8 +66,8 @@ const Banner = () => {
       <div className="md:grid grid-cols-4 px-10 container">
         <div className="grid-cols-1 py-2">
           <div className="flex flex-col justify-evenly h-full items-center md:gap-0 gap-3 sm:w-full">
-            <ItemButton label="Web Development" className=" " icon={<HiMiniDocumentCheck className="text-white text-3xl" />} />
-            <ItemButton label="Mobile App Devolopment" className=" " icon={<HiMiniDocumentCheck className="text-white text-3xl" />} />
+            <ItemButton label="Web Development" className=" " icon={<HiMiniDocumentCheck className="text-white md:text-3xl text-xl" />} />
+            <ItemButton label="Mobile App Devolopment" className=" " icon={<HiMiniDocumentCheck className="text-white md:text-3xl text-xl" />} />
           </div>
         </div>
 
@@ -131,8 +131,8 @@ const Banner = () => {
 
         <div className="grid-cols-1 py-2">
           <div className="flex flex-col justify-evenly h-full items-center md:gap-0 gap-3 sm:w-full">
-            <ItemButton label="UI/UX Engineering" className=" " icon={<HiMiniDocumentCheck className="text-white text-3xl" />} />
-            <ItemButton label="Software Services" className=" " icon={<HiMiniDocumentCheck className="text-white text-3xl" />} />
+            <ItemButton label="UI/UX Engineering" className=" " icon={<HiMiniDocumentCheck className="text-white md:text-3xl text-xl" />} />
+            <ItemButton label="Software Services" className=" " icon={<HiMiniDocumentCheck className="text-white md:text-3xl text-xl" />} />
           </div>
         </div>
       </div>
