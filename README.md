@@ -3,7 +3,7 @@
 - [Live Link](https://my-software-chamber.vercel.app)
 
 # Image
-![SOFTWARE CHAMBER FOR DESKTOP](/images/desktop-software-chamber.png)
+![SOFTWARE CHAMBER FOR DESKTOP](./public/images/desktop-software-chamber.png)
 
 Git clone from my github 
 ```
