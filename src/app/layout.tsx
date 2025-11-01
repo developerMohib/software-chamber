@@ -54,11 +54,11 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} ${rubik.variable} ${inter.variable} ${rubik.variable} ${dmSans.variable} ${bricolage.variable} antialiased`}
       >
-        <Navbar />
-        <div>
+        <div className="max-w-7xl mx-auto overflow-hidden">
+          <Navbar />
           {children}
+          <Footer />
         </div>
-        <Footer />
       </body>
     </html>
   );

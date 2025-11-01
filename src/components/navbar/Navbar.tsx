@@ -9,12 +9,6 @@ import CTAButton from '@/shared/CTAButton/CTAButton';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     // Navigation links data
-    const navLinks = [
-        { href: "#", label: "Features" },
-        { href: "#", label: "Pricing" },
-        { href: "#", label: "About" },
-        { href: "#", label: "Contact" },
-    ];
 
     const handlerContact = () => {
         console.log("Navbar clicked")
